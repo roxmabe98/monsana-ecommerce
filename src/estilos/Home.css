@@ -1,0 +1,73 @@
+/* src/estilos/Home.css */
+
+.carousel-slide {
+  position: relative;
+}
+
+.carousel-img {
+  width: 100vw;
+  height: calc(100vh - 100px); /* ajusta según altura del header */
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  color: white;
+  text-align: left;
+}
+
+.overlay h1 {
+  font-size: 50px;
+  margin: 0;
+}
+
+.overlay h2 {
+  font-size: 30px;
+  margin: 10px 0;
+  color: white;
+}
+
+.overlay button {
+  background-color: #a7b58c;
+  border: none;
+  padding: 12px 25px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.logout-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #e48f72;
+}
+
+.logout-btn:hover {
+  color: #c7654f;
+}
+.login-icon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #bf6b56;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.login-icon:hover {
+  color: #a24f3d;
+  text-decoration: underline;
+}
+
+.login-icon-img {
+  height: 20px;
+  width: 20px;
+  object-fit: contain;
+}

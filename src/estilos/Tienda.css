@@ -1,0 +1,134 @@
+/* Contenedor principal centrado */
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto; /* centra horizontalmente todo */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Header centrado */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Logo */
+.logo {
+  height: 50px;
+}
+
+/* Navegación */
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Íconos del header */
+.header-icons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.cart-icon img {
+  width: 28px;
+  height: 28px;
+}
+
+/* Sección Tienda */
+.tienda {
+  padding: 40px 0;
+  display: flex;
+  justify-content: center; /* centra el grid */
+}
+
+/* Grid de productos */
+.productos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 30px;
+  width: 100%;
+  max-width: 1000px; /* ancho máximo para el grid */
+}
+
+/* Cada producto centrado */
+.producto {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  max-width: 220px;
+  margin: 0 auto; /* centra cada producto dentro de su celda */
+}
+
+/* Imagen del producto */
+.producto-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+/* Nombre y precio */
+.producto-nombre {
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+.producto-precio {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Botón */
+.btn-carrito {
+  background-color: #ffc107;
+  color: #000;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-carrito:hover {
+  background-color: #e0a800;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .productos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .productos {
+    grid-template-columns: 1fr;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

@@ -1,0 +1,136 @@
+.producto-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  display: flex;
+  flex-wrap: wrap;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  font-family: 'Quicksand', 'Segoe UI', sans-serif;
+}
+
+.imagen-lateral {
+  width: 45%;
+  min-height: 400px;
+  background-image: url('/decorativas.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.producto-container form {
+  width: 55%;
+  padding: 40px;
+  background-color: #fff5f7;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.ver-stock-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background-color: #d88c9a;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ver-stock-btn:hover {
+  background-color: #c67185;
+}
+
+.producto-container h2 {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-size: 24px;
+  color: #884a58;
+  text-align: center;
+}
+
+form label {
+  display: block;
+  margin-top: 16px;
+  font-weight: 600;
+  color: #4b2c33;
+}
+
+form input,
+form textarea,
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #f2cfd0;
+  border-radius: 8px;
+  font-size: 14px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+form button[type="submit"] {
+  margin-top: 24px;
+  width: 100%;
+  background-color: #d88c9a;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+  background-color: #c67185;
+}
+
+.mensaje {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #884a58;
+  background-color: #fce8ec;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #d88c9a;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .producto-container {
+    flex-direction: column;
+  }
+
+  .imagen-lateral {
+    width: 100%;
+    height: 200px;
+  }
+
+  .producto-container form {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .ver-stock-btn {
+    position: static;
+    margin-bottom: 15px;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .producto-container h2 {
+    margin-top: 10px;
+  }
+}

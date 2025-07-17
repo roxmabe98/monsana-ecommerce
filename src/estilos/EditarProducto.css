@@ -1,0 +1,72 @@
+/* EditarProducto.css */
+
+.editar-producto-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fffdf7;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.editar-producto-container img.logo {
+  width: 120px;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.editar-producto-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #5c3d2e;
+}
+
+.editar-producto-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.editar-producto-container label {
+  font-weight: bold;
+  margin-bottom: 6px;
+  margin-top: 16px;
+  color: #3b2e2e;
+}
+
+.editar-producto-container input,
+.editar-producto-container textarea,
+.editar-producto-container select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.editar-producto-container textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.editar-producto-container button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #a06c54;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.editar-producto-container button:hover {
+  background-color: #8c5744;
+}
+
+.editar-producto-container .mensaje {
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: green;
+}

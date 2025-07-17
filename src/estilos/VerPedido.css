@@ -1,0 +1,119 @@
+/* Contenedor principal */
+.ver-pedidos-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Encabezado con logo y botón */
+.crud-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.volver-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.volver-btn:hover {
+  background-color: #c82333;
+}
+
+/* Grid de pedidos */
+.pedidos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+/* Tarjeta de pedido individual */
+.pedido-card-mini {
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.pedido-card-mini:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Lista de productos */
+.producto-lista-mini {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.producto-item-mini {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.producto-imagen-mini {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Botón Despachar */
+.despachar-btn {
+  margin-top: 12px;
+  padding: 10px 18px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.despachar-btn:disabled {
+  background-color: #94d3a2;
+  cursor: not-allowed;
+}
+
+.despachar-btn:hover:enabled {
+  background-color: #218838;
+}
+
+/* Mensaje cuando ya fue despachado */
+.etiqueta-despachado {
+  margin-top: 12px;
+  padding: 10px 18px;
+  background-color: #e6f4ea;
+  color: #2e7d32;
+  border: 2px solid #c8e6c9;
+  border-radius: 6px;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
