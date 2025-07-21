@@ -6,10 +6,14 @@ import reactRefresh from 'eslint-plugin-react-refresh'
 export default [
   { ignores: ['dist'] },
   {
-    files: ['**/*.{js,jsx}'],
+    files: ['/*.{js,jsx}'],
     languageOptions: {
       ecmaVersion: 2020,
-      globals: globals.browser,
+      // Cambié globals.browser por globals.node para que ESLint reconozca process
+      globals: {
+        ...globals.browser,
+        process: 'readonly', // Asegura que process sea considerado como una variable global
+      },
       parserOptions: {
         ecmaVersion: 'latest',
         ecmaFeatures: { jsx: true },
