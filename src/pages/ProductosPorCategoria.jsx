@@ -182,6 +182,35 @@ const ProductosPorCategoria = () => {
           </div>
         </div>
       )}
+
+      {/* Pie de página */}
+      <footer className="footer">
+        <div className="footer-contenedor">
+          <div className="footer-columna">
+            <h4>MONSANA</h4>
+            <p>Velas artesanales hechas con amor, diseño y conciencia ambiental.</p>
+          </div>
+
+          <div className="footer-columna">
+            <h4>Enlaces</h4>
+            <ul>
+              <li><Link to="/categorias">Tienda</Link></li>
+              <li><Link to="/personalizado">Personalizado</Link></li>
+              <li><Link to="/sobre-monsana">Sobre Monsana</Link></li>
+            </ul>
+          </div>
+
+          <div className="footer-columna">
+            <h4>Contacto</h4>
+            <p>Email: monsanaelcoca@hotmail.com</p>
+            <p>WhatsApp: +593 997863613</p>
+            <p>Dirección: EL Coca-Orellana-Ecuador</p>
+          </div>
+        </div>
+        <div className="footer-bottom">
+          <p>© {new Date().getFullYear()} Monsana. Todos los derechos reservados.</p>
+        </div>
+      </footer>
     </div>
   );
 };
