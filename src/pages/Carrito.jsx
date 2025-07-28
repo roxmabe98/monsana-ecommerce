@@ -236,7 +236,7 @@ const Carrito = () => {
                 <PayPalScriptProvider
                   options={{
                     "client-id":
-                      "AdOijLy_tFMbqVCHERAN-Of0aKMvsQPfYEeKdjFesawh92E8l4-mycdOHjamHFNmhXc477zttJvO1q0r",
+                      "AacVIZUmteyFisV6WK5AZFDcqoAeKssuuQXvnoVQeVovL4Dp9xIo_dEqjfWilERbLLzXTzAMZ4QkbN2A",
                     currency: "USD",
                   }}
                 >
